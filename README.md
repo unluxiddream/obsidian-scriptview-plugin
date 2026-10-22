@@ -48,10 +48,12 @@ Script View is a layout applied on top of **Reading view**.
 ## Source code
 
 The source code is available on GitHub.
-<a href="https://github.com/unluxiddream" target="_blank"><img src="https://brand.github.com/_next/static/media/logo-03.cc5e5332.png" alt="GitHub" style="height: 40px !important;"></a>
+<br>
+<a href="https://github.com/unluxiddream/obsidian-scriptview-plugin" target="_blank"><img src="https://brand.github.com/_next/static/media/logo-03.cc5e5332.png" alt="GitHub" style="height: 40px !important;"></a>
 
 ## Support
 
 If this plugin helped you, you can buy me a coffee to support future development.
+<br>
 <a href="https://ko-fi.com/unluxiddream" target="_blank"><img src="https://storage.ko-fi.com/cdn/brandasset/v2/support_me_on_kofi_red.png" alt="Ko-fi" style="height: 40px !important;"></a>
  
