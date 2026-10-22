@@ -1,8 +1,39 @@
-/*
+/* Script View: two-column layout for "Name : Dialogue" lines */
 
-This CSS file will be included with your plugin, and
-available in the app when your plugin is enabled.
+.script-view-active .script-view-row {
+  display: flex;
+  align-items: flex-start;
+  column-gap: var(--script-view-gap, 16px);
+  margin: var(--script-view-row-spacing, 3px) 0;
+}
 
-If your plugin does not need CSS, delete this file.
+.script-view-active .script-view-name {
+  flex: 0 0 var(--script-view-name-width, 15%);
+  box-sizing: border-box;
+  min-width: 0;
+  text-align: var(--script-view-name-align, left);
+  overflow-wrap: anywhere; /* Long names wrap inside the name column only. */
+}
 
-*/
+.script-view-active .script-view-dialogue {
+  flex: 1 1 0;
+  min-width: 0;
+  overflow-wrap: break-word; /* Long dialogue wraps inside the dialogue column only. */
+}
+
+.script-view-active .script-view-action-line {
+  margin: var(--script-view-row-spacing, 3px) 0;
+}
+
+/* Bold names. The second selector makes linked names ([[Name]]) bold too,
+   because Obsidian gives links their own font weight. */
+.script-view-active.script-view-name-bold .script-view-name,
+.script-view-active.script-view-name-bold .script-view-name a,
+.script-view-active.script-view-name-bold .script-view-name .internal-link {
+  font-weight: var(--bold-weight, 600);
+}
+
+/* Header button highlight while Script View is on */
+.view-action.script-view-button.is-active {
+  color: var(--interactive-accent);
+}

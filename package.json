@@ -1,7 +1,7 @@
 {
-	"name": "obsidian-sample-plugin",
+	"name": "scriptview",
 	"version": "1.0.0",
-	"description": "This is a sample plugin for Obsidian (https://obsidian.md)",
+	"description": "Display dialogue written as Name: Dialogue in a professional script layout.",
 	"main": "main.js",
 	"type": "module",
 	"scripts": {
@@ -10,8 +10,12 @@
 		"version": "node version-bump.mjs && git add manifest.json versions.json",
 		"lint": "eslint ."
 	},
-	"keywords": [],
-	"license": "0-BSD",
+	"keywords": [
+		"script",
+		"obsidian",
+		"plugin"
+	],
+	"license": "MIT",
 	"devDependencies": {
 		"@eslint/js": "^9.39.4",
 		"@types/node": "^22.15.17",
@@ -20,7 +24,7 @@
 		"eslint-plugin-obsidianmd": "^0.4.0",
 		"globals": "^17.6.0",
 		"jiti": "^2.6.1",
-		"obsidian": "latest",
+		"obsidian": "^1.14.4",
 		"typescript": "^5.8.3",
 		"typescript-eslint": "^8.59.1"
 	}
